@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Gregório de Matos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-titles">
+            <h1>QUIZ BARROCO</h1>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="blog.html">Voltar ao Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div id="quiz-start" class="quiz-box text-center">
+            <h2>Teste seus conhecimentos</h2>
+            <p>Descubra o quanto você aprendeu sobre a vida e as obras de Gregório de Matos.</p>
+            <button id="btn-start-quiz" class="btn-main">Começar Quiz</button>
+        </div>
+
+        <div id="quiz-container" class="quiz-box hidden">
+            <form id="quiz-form">
+                
+                <div class="question" id="q1">
+                    <h3>1. Quem era o principal alvo das críticas de Gregório de Matos?</h3>
+                    <label><input type="radio" name="p1" value="incorrect"> Agricultores</label>
+                    <label><input type="radio" name="p1" value="incorrect"> Escravos</label>
+                    <label><input type="radio" name="p1" value="correct"> Governantes corruptos</label>
+                    <label><input type="radio" name="p1" value="incorrect"> Soldados</label>
+                </div>
+
+                <div class="question hidden" id="q2">
+                    <h3>2. Qual poema demonstra tristeza pela situação da Bahia?</h3>
+                    <label><input type="radio" name="p2" value="incorrect"> Amor é fogo</label>
+                    <label><input type="radio" name="p2" value="correct"> Triste Bahia</label>
+                    <label><input type="radio" name="p2" value="incorrect"> Canção do Exílio</label>
+                    <label><input type="radio" name="p2" value="incorrect"> Navio Negreiro</label>
+                </div>
+
+                <div class="question hidden" id="q3">
+                    <h3>3. Na Lírica Religiosa, o poeta demonstra:</h3>
+                    <label><input type="radio" name="p3" value="incorrect"> Orgulho</label>
+                    <label><input type="radio" name="p3" value="incorrect"> Alegria</label>
+                    <label><input type="radio" name="p3" value="correct"> Arrependimento pelos pecados</label>
+                    <label><input type="radio" name="p3" value="incorrect"> Desejo de riqueza</label>
+                </div>
+
+                <div class="question hidden" id="q4">
+                    <h3>4. O dualismo representa:</h3>
+                    <label><input type="radio" name="p4" value="incorrect"> Humor</label>
+                    <label><input type="radio" name="p4" value="correct"> Conflito entre pecado e perdão</label>
+                    <label><input type="radio" name="p4" value="incorrect"> Guerra</label>
+                    <label><input type="radio" name="p4" value="indigo"> Política</label>
+                </div>
+
+                <div class="question hidden" id="q5">
+                    <h3>5. Carpe Diem significa:</h3>
+                    <label><input type="radio" name="p5" value="incorrect"> Esquecer o passado</label>
+                    <label><input type="radio" name="p5" value="correct"> Aproveitar a vida enquanto há tempo</label>
+                    <label><input type="radio" name="p5" value="incorrect"> Trabalhar muito</label>
+                    <label><input type="radio" name="p5" value="incorrect"> Ser religioso</label>
+                </div>
+
+                <div class="question hidden" id="q6">
+                    <h3>6. Qual apelido Gregório de Matos recebeu?</h3>
+                    <label><input type="radio" name="p6" value="incorrect"> Poeta do Amor</label>
+                    <label><input type="radio" name="p6" value="correct"> Boca do Inferno</label>
+                    <label><input type="radio" name="p6" value="incorrect"> Mestre Barroco</label>
+                    <label><input type="radio" name="p6" value="incorrect"> Anjo da Bahia</label>
+                </div>
+
+                <button type="button" id="btn-next" class="btn-main">Avançar</button>
+            </form>
+        </div>
+
+        <div id="quiz-result" class="quiz-box text-center hidden">
+            </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>Projeto desenvolvido para a disciplina de Português.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
